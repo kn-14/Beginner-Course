@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<!--the head usually would not be displayed on the html page-->
+		<title>THIS IS THE TITLE OF THIS HTML PAGE</title>
+	</head>
+
+
+	<body style="background-color: #D7F0F0; text-align: justify;"><a name='top'></a>
+
+
+	<div id = 'INTRO'>
+		<header>
+			<h1><center>HTML TAGS, ATTRIBUTES AND ELEMENTS</center></h1>
+		</header>
+		<!--The body is visible on a web page-->
+			<p>This document introduces you to the basic html tags used for structuring contents of html web pages. It shows how to add texts, headings, lists, tables, hyperlinks and images to webpages. Go through the code used in producing this web page and try reproducing it to your own specifications. HTML tags and attributes are a lot more than those stated here, but for an introductory crash course, these are necessary.</p>
+
+		<ul>
+			<li>
+				<h2>Tags</h2>
+				<p>The basic structure of an HTML document includes tags, which surround content and apply meaning to it. The purpose of HTML is to apply meaning, not presentation, and this example has now defined some fundamental elements of a web page.</p>
+			</li>
+
+			<li>
+				<h2>Closing tags</h2>
+				<p>The <code>&lt;/body&gt;</code> and <code>&lt;/html&gt;</code> put a close to their respective elements (more on elements in a moment).</p>
+			</li>
+
+			<li>
+				<h2>Attributes</h2>
+				<p>Tags can also have <em>attributes</em>, which are extra bits of information. Attributes appear inside the opening tag and their values sit inside quotation marks. They look something like <code>&lt;tag attribute="value"&gt;Margarine&lt;/tag&gt;</code>.</p>
+			</li>
+
+			<li>
+				<h2>Elements</h2>
+				<p>Tags tend not to do much more than mark the beginning and end of an element. Elements are the bits that make up web pages. You would say, for example, that everything that is in between (and includes) the <code>&lt;body&gt;</code> and <code>&lt;/body&gt;</code> tags is the body element. As another example, whereas &#8220;<code>&lt;title&gt;</code>&#8221; and &#8220;<code>&lt;/title&gt;</code>&#8221; are <em>tags</em>, &#8220;<code>&lt;title&gt;Ladies Geeking Out&lt;/title&gt;</code>&#8221; is a title <em>element</em>.</p>
+			</li>
+		</ul>
+	</div>
+
+
+	<div id = 'HTMLSTRUCTURE'>
+		<center><h2> THE BASIC STRUCTURE OF HTML DOCUMENTS </h2></center>
+
+<pre><code class="html">
+<em>&lt;!DOCTYPE html&gt;</em>
+<em>&lt;html&gt;</em>
+	<!--head-->
+	<em>&lt;head&gt;></em>
+		&lt;title&gt;PAGE TITLE GOES HERE, WITHIN THE 'HEAD' TAG.&lt;/title&gt;>
+	<em>&lt;/head&gt;></em>
+	
+	<em>&lt;body&gt;</em>
+
+		<em>&lt;header&gt;></em>
+			<em>&lt;h1&gt;</em>THE MAIN TITLE OF THE WEB PAGE GOES HERE, USUALLY WRITTEN IN 'h1' TAGS.<em>&lt;/h1&gt;></em>
+		<em>&lt;/header&gt;></em>
+
+		<p>This is the element of the body tag of this html page.Every thing else<br>
+		goes here. By the way, we can also leave comments within our codes like<br>
+		this &lt;!--This tells others what this code does--&gt; and helps me understand<br>
+		what it is 100 years later when the aliens arrive.</p>
+		<p>THANK YOU FOR VISITING THIS WEBSITE</p>
+
+		<em>&lt;footer&gt;></em>
+			<p>This can be links to other pages in my website, links to direct mails for contact information.</p>
+		<em>&lt;/footer&gt;></em>
+
+	<em>&lt;/body&gt;</em>
+<em>&lt;/html&gt;</em>
+</code></pre>
+	</div>
+
+
+	<div id = 'BASICHTML'>
+		<h1><center>BASIC HTML TAGS</center></h1>
+			<!--begin HTML tag list-->
+		<ol>
+
+		<div id = 'headertags'>
+			<li> <!--item 1-->
+				<h2 style="color: #970AA6;"><u>HTML HEADER TAG</u></h2>
+					<strong><p>Tags: 'header' </p></strong>
+
+					<p>The <strong>&lt;header&gt;Element</strong> represents a group of introductory or navigational aids. It may contain some heading elements but also other elements like a logo, wrapped section's header, a search form, and so on. The &lt;header&gt;element may be a content sectioning tag but does not add any new formatting we cannot achieve with the &lt; h1 &gt; tag.</p>
+
+					<b>&lt;header&gt;</b>
+						<p>Il insert a logo here later</p>
+					<b>&lt;/header&gt;</b>
+			</li>
+		</div>
+
+		<div id = 'headingtags'>
+			<li><!--item 2-->
+				<h2 style="color: #970AA6;"><u>HTML HEADERS</u></h2>
+				<strong><em><p>Tags: 'h1', 'h2', 'h3', 'h4', 'h5', 'h6'</p></em></strong>
+				<p>The heading tags are used to specify headings and sub headings in HTML documents.There are six heading tags, 'h1' through 'h6', where 'h1' represents the highest level headings and 'h6' represents the lowest.</p>
+
+					<h1>&lt; h1 &gt; TOP LEVEL HEADING.</h1>
+					<h2>&lt; h2 &gt; TOP LEVEL HEADING.</h2>
+					<h3>&lt; h3 &gt; LOW LEVEL HEADING.</h3>
+					<!--These headers are rearely seen in everyday webpages-->
+					<h4>&lt; h4 &gt; LOW LEVEL HEADING.</h4>
+					<h5>&lt; h5 &gt; LOW LEVEL HEADING.</h5>
+					<h6>&lt; h6 &gt; LOW LEVEL HEADING.</h6>
+			</li>
+		</div>
+
+
+		<div id = 'textandparagraphs'>
+			<li> <!--item 3-->
+				<h2 style="color: #970AA6;"><u>HTML TEXT AND PARAGRAPHS</u></h2>
+				<strong><em><p>Tags: 'p', 'em', 'strong', 'i', 'b'</p></em></strong>
+
+					<p>The &lt;p&gt; tag is used to insert plain texts into web pages.The &lt;p&gt; This is a paragraph conataining text i want on my webpage.&lt;/p&gt;</p>
+
+					<p>The &lt;em&gt; tag is used to create emphases on a text.<em>&lt;em&gt; I have used the &lt;em&gt; tag to make this text italics.&lt;/em&gt;.</em></p>
+
+					<p><i>An &lt;i&gt;&lt;/i&gt; tag can also create italic texts like I have done here.</i></p>
+
+					<p><strong>A &lt;strong&gt;&lt;/strong&gt; tag makes a text bold like this one.</strong></p>
+
+					<p><b>A &lt;b&gt;&lt;/b&gt;can also create bold texts.</b></p>
+
+					<p>The &lt;u&gt; tag is used to underline texts in web pages.The &lt;p&gt; <u>This is an underlined sentence.&lt;/p&gt;</u></p>
+			</li>
+		</div>
+
+
+		<div id = 'htmllists'>
+			<li> <!--item 4-->
+				<h2 style="color: #970AA6;"><u>HTML LISTS</u></h2>
+				<strong><em><p>Tags: 'ol', 'ul', 'li'</p></em></strong>
+
+					<p>The tags 'ul' and 'ol' are used for listing items on web pages. 'ul', <em>Unordered list, </em> uses bullet points as opposed to 'ol', <em>Ordered list,</em> which automatically generates a numbered list. 'li' tag means <i>list item</i> and is used to add items to your list in <b>both</b> lists.<p/>
+					<p>Description lists are used for listing items with a need to some content description. A description list is enclosed within the 'dl' tag. The main items in the list are enclosed within a description term 'dt' tag and the descriptions for each item in the list are each enclosed within a description definition  'dd' tag.</p>
+
+	<pre><code>
+		<b>&lt;ul&gt;</b>
+			&lt;li&gt;ITEM1&lt;/li&gt;
+			&lt;li&gt;ITEM2&lt;/li&gt;
+		<b>&lt;/ul&gt;</b>
+
+		<b>&lt;ol&gt;</b>
+			&lt;li&gt;ITEM1&lt;/li&gt;
+			&lt;li&gt;ITEM2&lt;/li&gt;
+		<b>&lt;/ol&gt;</b>
+
+		<b>&lt;dl&gt;</b>
+			&lt;dt&gt;DESCRIPTION TERM&lt;/dt&gt;
+				&lt;dd&gt;DESCRIPTION DEFINITION&lt;/dd&gt;
+				&lt;dd&gt;DESCRIPTION DEFINITION&lt;/dd&gt;
+			&lt;dt&gt;DESCRIPTION TERM&lt;/dt&gt;
+				&lt;dd&gt;DESCRIPTION DEFINITION&lt;/dd&gt;
+				&lt;dd&gt;DESCRIPTION DEFINITION&lt;/dd&gt;
+		<b>&lt;/dl&gt;</b>
+	</code></pre>
+
+		<ol>
+			<li>
+				<h3>This is an unordered list</h3>
+					<ul>
+						<li>Apples</li>
+						<li>Oranges</li>
+						<li>Kale</li>
+						<li>Stawberries</li>
+					</ul>
+			</li>
+
+			<li>
+				<h3>This is an ordered list</h3>
+					<ol>
+						<li>The Shawshank Redemption</li>
+						<li>The Unusual Suspect</li>
+						<li>Forest Gump</li>
+						<li>The bIg Lebowski</li>
+					</ol>
+			</li>
+
+			<li>
+				<h3>This is a definition list</h3>
+					<dl>
+						<dt>Graduation 2015</dt>
+							<dd>Graduate: Amy Lee Winers</dd>
+							<dd>Course: BSc Economics and Finance</dd>
+							<dd>GPA: 2nd Class Upper</dd>
+							<dd>University: University of Cambridge</dd>
+
+
+						<dt>Techs for Postgrad? Why I should be a geek!!</dt>
+							<dd>Win an arguement with Sheldon.</dd>
+							<dd>Larry Page and Sergie Brin own the world.</dd>
+							<dd>Might be ready for war when the aliens finally arrive.</dd>
+							<dd>Control the machines.</dd>
+
+
+						<dt>SUPER HERO COMBAT.</dt>
+							<table><tbody>
+
+							<tr><td>
+							<dd style='display:inline;'><img alt= 'dvb' src = 'http://i.imgur.com/YWEOoy9.gif' height='200' width='300'>DARTHVADER VS BATMAN</dd>
+							</td>
+
+							<td>
+							<dd style='display:inline;'><img alt = 'hvt' src = 'https://schoobysports.files.wordpress.com/2013/03/hulk_vs_thing.jpg' height = '200' width = '300'>TheHulk VS Thing</dd>
+							</td></tr>
+
+							<tr><td>
+							<dd style='display:inline;'><img alt='jvj' src='http://www.myextralife.com/wp-content/uploads/2008/01/jack-vs-bond.jpg' height='200' width='300'>JameBond VS JackBauer</dd>
+							</td>
+
+							<td>
+							<dd style='display:inline;'><img alt='fvt' src='http://i.ytimg.com/vi/uETwU_mRqCk/hqdefault.jpg' height='200' width='300'>TheFlash VS Thor</dd>
+							</td></tr>
+
+							<tr><td>
+							<dd style='display:inline;'><img alt='evj' src='http://api.ning.com/files/cLeXvArxJShtvi77t0Hsal9ubC-SN2TrRYJ*ACqYQfv7JjLJktiUdOV*gwMfLBvEMa6uq*qwmlUB5Vxdv2nkv6TDVjAzzoYQ/teamjacobheader.png' height='200' width='300'>Jacob VS Edward</dd>
+							</td>
+
+							<td>
+							<dd style='display:inline;'><img alt='evj' src='http://i.dailymail.co.uk/i/pix/2014/05/30/article-2643936-1E54C29800000578-662_634x466.jpg' height='200' width='300'>Gym VS McDonalds</dd>
+							</td></tr>
+						</tbody></table>
+
+					</dl>
+			</li>
+
+		</ol>
+
+		</li>
+		</div>
+
+
+		<div id = 'htmllinks'>
+			<li> <!--item 5-->
+		<h2 style="color: #970AA6;"><u>EMBEDDING HYPERLINKS IN HTML TEXTS</u></h2>
+			<strong><em><p>Tags: 'a', Attibutes: 'href'</p></em></strong>
+
+				<p>The &lt;a&gt; tag or anchor element of HTML documents sets a pointer to an hyperlink location on the same web page or some other page on the internet. The 'href' Hyperlink Reference attribute specifies the literal URL or Domain name of the web page in question.</p>
+
+				<p>For example this how i specify a link to the cfg website: &lt;a href = 'www.codefistgirls.org.uk'&gt; CodeFirstGirls.&lt;/a&gt; I have embedded or hidden the www.codefirstgirls.org.uk in the 'CodeFristGirls' string like this. <a href = 'www.codefirstgirls.org.uk'>CodeFirstGirls</a>Clicking on the link redirects to the code first girls home page assuming it will always exist online and no one takes it down. If the website is taken down, the link returns a DNS_ERROR_PAGE.</p>
+
+				<p>The href property tell you what page the link points to on the internet. Links can be absolute external links, absolute local links or relative local link.</p>
+
+				<p> This is an absolute external <a href='https://developer.mozilla.org/en/docs/Web/HTML/Element'>link</a> as it points to a web page outside ours.</p>
+
+				<p> This is an absolute local <a href='www.webpage/about'>link</a> as it points toa file relative to the root of your web server. This link would not work as it does not exist for now.</p>
+
+				<p> This is an relative local <a href='about'>link.</a>This will link to the about file in your current html folder.</p>
+
+				<p>You can also use the anchor and href to link to places in the same document like to our <a href='#imgtab'>image table</a> below by specifying href = #tag_of_desired_location_on_htmlpage.</p>
+
+				<p>You can open links in a new browser by adding a target='_blank' property to the anchor tag <a href='www.facebook.com' target = '_blank'>like this</a>.</p>
+		</li>
+		</div>
+
+
+		<div id = 'htmltable'>
+			<li> <!--item 6-->
+		<h2 style="color: #970AA6;"><u>HTML TABLES</u></h2>
+			<strong><em><p>Tags: 'table', 'thead', 'th', 'tbody', 'tr', 'td'</p></em></strong>
+
+			<b><u><h3>Structure of HTML table</h3></u></b>
+
+			<pre><code>
+	<b>&lt;table&gt;</b>
+		<p>Columns labels go here, within the 'th' table heads tags within the 'thead', table header tags.</p>
+		&lt;thead&gt;
+			&lt;th&gt;Column1 Label&lt;/th&gt;
+			&lt;th&gt;Column2 Label&lt;/th&gt;
+			&lt;th&gt;Column3 Label&lt;/th&gt;
+		&lt;/thead&gt;
+
+		<p>Table cells are specified within the 'tbody' table body tag.</p>
+		&lt;tbody&gt;
+
+			<p>Cells are filled in row-wise from left to right. The 'tr' Table row tag wraps one full row and the 'td' table data tag specifies each cell's data row-wise. So if there are 4 columns and 5 rows in our table, we should have 4 'td' openin and closing tags within each of our 5 'tr' opening and closing tags.</p>
+
+			<p>Row 1</p>
+			&lt;tr&gt;
+				&lt;td&gt;Column1 Row1&lt;/td&gt;
+				&lt;td&gt;Column2 Row1&lt;/td&gt;
+				&lt;td&gt;Column3 Row1&lt;/td&gt;
+			&lt;/tr&gt;
+
+			<p>Row 2</p>
+			&lt;tr&gt;
+				&lt;td&gt;Column1 Row2&lt;/td&gt;
+				&lt;td&gt;Column2 Row2&lt;/td&gt;
+				&lt;td&gt;Column3 Row2&lt;/td&gt;
+			&lt;/tr&gt;
+
+			<p>Row 3</p>
+			&lt;tr&gt;
+				&lt;td&gt;Column1 Row3&lt;/td&gt;
+				&lt;td&gt;Column2 Row3&lt;/td&gt;
+				&lt;td&gt;Column3 Row3&lt;/td&gt;
+			&lt;/tr&gt;
+
+		&lt;/tbody&gt;
+	<b>&lt;/table&gt;</b>
+	</code></pre>
+
+			<center>
+				<table>
+					<thead>
+					<!--this is the table header row-->
+						<tr>
+							<th>Column 1</th>
+							<th>Column 2</th>
+							<th>Column 3</th>
+							<th>Column 4</th>
+						</tr>
+					</thead>
+
+					<tbody>
+					<!--this is the first row-->
+						<tr>
+							<td>Column1 Row1</td>
+							<td>Column2 Row1</td>
+							<td>Column3 Row1</td>
+							<td>Column4 Row1</td>
+						</tr>
+					<!--this is the second row-->
+						<tr>
+							<td>Column1 Row2</td>
+							<td>Column2 Row2</td>
+							<td>Column3 Row2</td>
+							<td>Column4 Row2</td>
+						</tr>
+					<!--this is the third row-->
+						<tr>
+							<td>Column1 Row3</td>
+							<td>Column2 Row3</td>
+							<td>Column3 Row3</td>
+							<td>Column4 Row3</td>
+						</tr>
+					</tbody>
+				</table>
+			</center>
+		</li>
+		</div>
+
+
+		<div id = 'htmlimages'>
+			<li> <!--item 7-->
+			<h2 style="color: #970AA6;"><u>IMAGES</u></h2>
+			<strong><em><p>Tags: 'img', 'src'</p></em></strong>
+
+				<p>Adding images to web pages is with the 'img' tag. The img tag does not have a closing tag like the other html tags and has a 'alt' attribute which is a description for the image and a 'src' attribute that points to the image location. (an image URL) or a file (a web file folder on your web server or site files).</p>
+
+				<h3>Bunch Of Images In A Table</h3>
+				<p>These are simple web images in a table. Additionally I have drawn boarders for my table by adding the 'border' attribute to my table tag. The border attribute takes a value of '1': for Borders or '0': for no borders.</p>
+
+			<!--this is a table i have aligned to the center of my html page with the 'center' tag-->
+				<center><table border="1"><a name='imgtab'></a>
+					<!--the border attribute takes 1 or 0; 1 = draw border, 0 = no border-->
+						<thead>
+						<!--this is the table header row-->
+							<tr>
+								<th>STAR WARS</th>
+								<th>LONDON</th>
+								<th>AVATAR</th>
+								<th>007s</th>
+							</tr> <!--this is the end of the table's column header row-->
+						</thead>
+
+						<tbody>
+						<!--this is the first row-->
+							<tr>
+								<td> <!--cell 1.1-->
+									<img alt='StarWars1', src='http://www.joblo.com/newsimages1/obiwan-episodevii.jpg' height="200" width="250">
+								</td>
+
+								<td> <!--cell 1.2-->
+									<img alt='LONDON1' src='http://cdn.londonandpartners.com/assets/events/special/45681-640x360-thamesdiamondjubilee_bridgeboat_william-dudley_ns.jpg' height="200" width="250">
+								</td>
+
+								<td> <!--cell 1.3-->
+									<img alt='AVATAR1' src='http://25.media.tumblr.com/tumblr_m5d4zbpire1r2rlh6o2_500.gif' height="200" width="250">
+								</td>
+
+								<td> <!--cell 1.4-->
+									<img alt='BOND1' src='http://www.007james.com/i/actors/regulars/sean_connery/sean_connery_intro.jpg' height="200" width="250">
+								</td>
+							</tr> <!--this is the end of the 1st table row-->
+
+						<!--this is the second row-->
+							<tr>
+								<td> <!--cell 1.1-->
+									<img alt='StarWars2', src='https://38.media.tumblr.com/737a706b86e28859d6a230ab358b04d3/tumblr_mpw9zdth201qcbbyko1_400.gif' height="200" width="250">
+								</td>
+
+								<td> <!--cell 2.2-->
+									<img alt='LONDON2' src='http://cdn.londonandpartners.com/l-and-p/assets/media/60972-640x360-tech_ns.jpg' height="200" width="250">
+								</td>
+
+								<td> <!--cell 2.3-->
+									<img alt='AVATAR2' src='http://media.tumblr.com/tumblr_m3cx0gXsJI1r6f4rx.gif' height="200" width="250">
+								</td>
+
+								<td> <!--cell 2.4-->
+									<img alt='BOND2' src='http://dejareviewer.files.wordpress.com/2013/09/timothy-dalton-brought-a-sense-of-deadly-seriousness-back-to-the-role-of-james-bond1.jpg' height="200" width="250">
+								</td>
+							</tr> <!--this is the end of the 2nd table row-->
+						
+							<!--this is the third row-->
+							<tr>
+								<td><img alt='STARWARS3' src='http://33.media.tumblr.com/tumblr_m4dgr8Ms2j1ro0pz8o1_500.gif' height="200" width="250"></td>
+
+								<td><img alt='LONDON3' src='http://static.guim.co.uk/sys-images/Travel/Pix/pictures/2008/09/09/londonview460.jpg' height="200" width="250"></td>
+
+								<td><img alt='AVATAR3' src='http://media.giphy.com/media/KPJGGe0qsTb8s/giphy.gif' height="200" width="250"></td>
+
+								<td><img alt='BOND3' src='http://ramp.ie/wp-content/uploads/2012/11/twine-publicity19.jpg' height="200" width="250"></td>
+							</tr> <!--this is the end of the 3rd table row-->
+
+							<!--this is the fourth row-->
+							<tr>
+								<td>
+									<img alt='STARWARS4' src='http://33.media.tumblr.com/6c302451727559b303e3804ff59e439c/tumblr_inline_nh9to3Nprq1rsbb1h.gif' height="200" width="250">
+								</td>
+
+								<td>
+									<img alt='LONDON4' src='http://itsabeachday.com/wp-content/uploads/2015/07/london-tourism.jpg' height="200" width="250">
+								</td>
+
+								<td>
+									<img alt='AVATAR4' src='http://24.media.tumblr.com/b5188864141fdaa32d645c9382223dba/tumblr_mmxxxdLb7e1sqd6q3o1_500.gif' height="200" width="250">
+								</td>
+
+								<td>
+									<img alt='BOND4' src='http://assets.rollingstone.com/assets/images/list/casino-royale-1352391403.jpg' height="200" width="250">
+								</td>
+							</tr><!--this is the end of the 4th table row-->
+						</tbody>
+					</table>
+				</center>
+		</li>
+		</div>
+
+
+		<div id = 'linkedimages'>
+			<li> <!--item 8-->
+			<h2 style="color: #970AA6;"><u>EMBEDDING HYPERLINKS IN IMAGES</u></h2>
+
+				<p>How do we make an image the link to another webpage? This is done exactly the same way as embedding texts. In this case we use images rather than texts to hide hyperlinks. The a tag has an href property pointing to the desired webpage (href = 'www.desiredwebpage.nodomain') and the content of the anchor tag is an image tag.</p>
+
+			<center><table border='1'>
+				<thead>
+					<!--this is the table header row-->
+					<tr>
+						<th>DARTH VADER</th>
+						<th>LONDON TOURISM</th>
+						<th>AVATAR THE LAST AIR BENDER</th>
+						<th>007s</th>
+					</tr>
+				</thead>
+
+
+				<tbody>
+				<!--this is the first row-->
+					<tr> <!--table row open-->
+						<td> <!--table data start-->
+							<a href= 'http://www.starwars.com/' target='_blank'><img alt='DARTH VADER', src='https://33.media.tumblr.com/bf173de75a7a9cc04f25a63bf4d50e3b/tumblr_ntnrkbv6fO1tkurtqo1_250.gif' height="200" width="250"></a>
+						</td><!--table data end-->
+
+						<td> <!--table data start-->
+							<a href= 'http://www.visitlondon.com/' target='_blank'><img alt='LONDON', src='http://media.giphy.com/media/QGMiTNBw8hB72/giphy.gif' height="200" width="250"></a>
+						</td>
+
+						<td>
+							<a href='http://www.imdb.com/title/tt0417299/' target = '_blank'><img alt='AVATAR' src='http://higherperspectives.com/wp-content/uploads/2015/07/lstrnb.jpg' height="200" width="250"></a>
+						</td>
+
+						<td>
+							<a href='http://www.007.com/characters/the-bonds/' target = '_blank'><img alt='BOND' src='http://www.chrisstuckmann.com/wp-content/uploads/2014/01/james-bond-actors-640x347.png' height="200" width="250"></a>
+						</td>
+					</tr> <!--this is the end of the first table row-->
+				</tbody>
+
+			</table></center>
+		</li>
+		</div>
+
+
+		<div id = 'htmlfooters'>
+			<li> <!--item 9-->
+			<h2 style="color: #970AA6;"><u>FOOTER</u></h2>
+			<p>The &lt;footer&gt; tag defines a footer for a document or section. A &lt;footer&gt; element should contain information about its containing element. A &lt;footer&gt; element typically contains:</p>
+				<ul>
+					<li>&nbsp;authorship information</li>
+					<li>copyright information</li>
+					<li>contact information</li>
+					<li>sitemap</li>
+					<li>back to top links</li>
+					<li>related documents</li>
+				</ul>
+		</li>
+		</div>
+
+		</ol>
+	</div>
+			<!--end of HTML tags list-->
+
+			<!--begin footer-->
+	<div id = 'footer'>
+			<footer>
+				<h1 style='colour: solid red; text-align: center;'><em><b>This is my temporary footer. This can be an image, a logo or a sentence like this.</b></em></h1>
+
+				<center>
+					<table border='1'>
+						<thead>
+						<!--this is the table header row-->
+							<tr>
+								<th>CFGBrunel</th>
+								<th><a href='mailto:email_adddress_to_recieve_queries'>Email:Email_Addy@nodomain.com></a></th>
+								<th>Copyright Information</th>
+								<th><a href='#top'>Back to top</a></th>
+							</tr>
+						</thead>
+					</table>
+				</center>
+			</footer>
+	</div>
+		<!---end of footer-->
+
+	</body>
+
+</html>
